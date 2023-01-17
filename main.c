@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     if(argc == 1 || argc >= 3){
         printf("\nErreur: le programme prend exactement un argument");
         return 1;
-    }if(argc == 2){
+    }else{
         compterLongueur(argv[1]);
     }
 
