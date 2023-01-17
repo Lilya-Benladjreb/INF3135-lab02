@@ -1,5 +1,5 @@
 exec: main
-		./main MaChaineDeCaractere
+	./main MaChaineDeCaractere
 
 main: main.c
-		gcc -o main main.c
+	gcc -o main main.c
