@@ -1,11 +1,11 @@
 #include <stdio.h>
 
-int compterLongueur(char *argument[]){
-    int i=0;
-    int compteur;
+int compterLongueur(char argument[]){
+    int i = 0;
+    int compteur = 0;
 
-    while(argument[i] != '\0'){
-        compteur += compteur;
+    for (i = 0; argument[i] != '\0'; ++i){
+        compteur ++;
     }
 
     printf("\"%s\" est de longueur %d \n", argument, compteur);
@@ -13,13 +13,11 @@ int compterLongueur(char *argument[]){
     return 0;
 }
 
-int main(int argc, char *argv[]) {
-    int compteur;
-    
+int main(int argc, char *argv[]) {    
     if(argc == 1 || argc >= 3){
         printf("\nErreur: le programme prend exactement un argument");
         return 1;
-    }else{
+    }if(argc == 2){
         compterLongueur(argv[1]);
     }
 
